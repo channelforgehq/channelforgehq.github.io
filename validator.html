@@ -142,16 +142,12 @@ footer a{color:var(--forge);text-decoration:none}
       <div class="mono-mini">$19 once · 14-day money-back guarantee · no subscriptions</div>
     </div>
 
-    <!-- EMAIL CAPTURE — Александр: замени FORM_ENDPOINT на реальный Formspree/Tally endpoint (см. комментарий внизу файла) -->
+    <!-- EMAIL CAPTURE — ведёт на Google Form (ответы падают в таблицу Google Форм) -->
     <div class="email" id="emailBox">
       <h3>Want the niche checklist as a one-pager?</h3>
-      <p>Drop your email and I'll send the full faceless-niche starter checklist — the exact gates above plus the launch-risk and RPM notes. No spam; you can also be first to know when ChannelForge launches on Product Hunt.</p>
-      <form id="emailForm" action="FORM_ENDPOINT" method="POST">
-        <input type="email" name="email" placeholder="you@email.com" required>
-        <input type="hidden" name="source" value="niche-validator">
-        <button class="btn" type="submit">Send me the checklist</button>
-      </form>
-      <div class="mono-mini" id="emailMsg" style="display:none;color:var(--term-green)">Thanks — checklist is on its way.</div>
+      <p>Leave your email and I'll send the full faceless-niche starter checklist — the exact gates above plus the launch-risk and RPM notes. No spam; you can also be first to know when ChannelForge launches on Product Hunt.</p>
+      <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSeSp_lCxn01BYP4q2fe6NvL0dZAu8yDYD-6enDX9JEAegfbRQ/viewform" target="_blank" rel="noopener">Send me the checklist →</a>
+      <div class="mono-mini">Takes 10 seconds · one field · unsubscribe any time</div>
     </div>
   </div>
 </section>
@@ -283,26 +279,15 @@ document.getElementById('scoreBtn').onclick = () => {
   document.getElementById('result').scrollIntoView({behavior:'smooth'});
 };
 
-// email — если endpoint не настроен, не отправляем, показываем подсказку
-document.getElementById('emailForm').addEventListener('submit', function(e){
-  if (this.action.endsWith('FORM_ENDPOINT')){
-    e.preventDefault();
-    document.getElementById('emailMsg').style.display='block';
-    document.getElementById('emailMsg').style.color='var(--warn)';
-    document.getElementById('emailMsg').textContent='(email capture not wired yet — see setup note)';
-  }
-  // если endpoint реальный — форма отправится штатно на Formspree/Tally
-});
+// email-захват вынесен на Google Form (кнопка-ссылка выше) — JS не требуется
 </script>
 
 <!--
-  НАСТРОЙКА EMAIL-ЗАХВАТА (Александр, 2 минуты):
-  1. Зарегистрируй бесплатный аккаунт на https://formspree.io (или https://tally.so).
-  2. Создай форму, получи endpoint вида https://formspree.io/f/xxxxxxx
-  3. Замени в этом файле FORM_ENDPOINT (в атрибуте action у #emailForm) на этот endpoint.
-  4. Перезалей validator.html на Pages.
-  Formspree free = 50 писем/мес, письма приходят на твою почту. Дальше — собираешь базу для nurture-серии.
-  Пока endpoint не заменён — форма ничего не шлёт, просто показывает подсказку (продукт-CTA работает в любом случае).
+  EMAIL-ЗАХВАТ НАСТРОЕН (21.07): кнопка ведёт на Google Форму «ChannelForge — Faceless Niche Checklist»
+  в Google-аккаунте Александра. Ответы копятся во вкладке «Ответы» формы (можно выгрузить в таблицу).
+  Редактировать форму: https://docs.google.com/forms/d/1Mv9DxvSVjCtXnkIibP2YxlTuJmiEMee83rIw6PqLZEg/edit
+  Публичная ссылка (вшита в кнопку): .../forms/d/e/1FAIpQLSeSp_lCxn01BYP4q2fe6NvL0dZAu8yDYD-6enDX9JEAegfbRQ/viewform
+  Что дальше: когда наберутся первые email — отправить обещанный one-pager (чеклист) и завести nurture-серию.
 -->
 </body>
 </html>
