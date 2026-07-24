@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ChannelForge — Thank you! Your download</title>
+<meta name="description" content="Payment received. Download ChannelForge and start producing.">
+<meta name="robots" content="noindex,nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0E0F13; --panel:#171922; --panel2:#1D2029; --line:#2A2D38;
+  --bone:#F2EFE9; --dim:#9A97A1; --forge:#FF6B35; --forge-soft:#FF8B5E;
+  --term-green:#7ADB8F; --term-bg:#0A0B0E;
+  --mono:'JetBrains Mono',monospace; --serif:'Instrument Serif',serif; --sans:'Inter',system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--ink);color:var(--bone);font-family:var(--sans);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;min-height:100vh;display:flex;flex-direction:column}
+::selection{background:var(--forge);color:var(--ink)}
+a{color:inherit}
+.wrap{max-width:680px;margin:0 auto;padding:0 24px;width:100%}
+nav{border-bottom:1px solid var(--line)}
+nav .wrap{max-width:1080px;display:flex;align-items:center;height:64px}
+.logo{font-family:var(--mono);font-size:15px;font-weight:500;text-decoration:none;color:var(--bone)}
+.logo b{color:var(--forge);font-weight:500}
+main{flex:1;display:flex;align-items:center;padding:60px 0}
+.check{width:64px;height:64px;border-radius:50%;background:rgba(122,219,143,.12);border:1px solid rgba(122,219,143,.4);display:flex;align-items:center;justify-content:center;margin-bottom:28px}
+.eyebrow{font-family:var(--mono);font-size:13px;color:var(--term-green);letter-spacing:.02em;display:block;margin-bottom:14px}
+h1{font-family:var(--serif);font-weight:400;font-size:clamp(36px,6vw,56px);line-height:1.08;letter-spacing:-.01em;margin-bottom:18px}
+p.lead{font-size:19px;color:var(--dim);margin-bottom:30px;max-width:56ch}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--forge);color:#16130f;font-family:var(--sans);font-weight:600;font-size:18px;padding:18px 40px;border-radius:12px;text-decoration:none;cursor:pointer;transition:background .2s ease}
+.btn:hover{background:var(--forge-soft)}
+.btn.disabled{background:var(--panel2);color:var(--dim);border:1px solid var(--line);cursor:not-allowed}
+.steps{margin-top:40px;border-top:1px solid var(--line);padding-top:30px}
+.steps h3{font-family:var(--mono);font-size:12.5px;color:var(--dim);font-weight:500;letter-spacing:.04em;margin-bottom:18px}
+.st{display:grid;grid-template-columns:26px 1fr;gap:14px;margin-bottom:16px;align-items:start}
+.st .n{font-family:var(--mono);font-size:13px;color:var(--forge)}
+.st .t{font-size:15.5px}
+.st .t b{color:var(--bone)}
+.st .t span{color:var(--dim)}
+.st .mono{font-family:var(--mono);font-size:13px;color:var(--term-green);background:var(--term-bg);border:1px solid var(--line);border-radius:7px;padding:8px 12px;display:inline-block;margin-top:6px}
+.note{margin-top:34px;font-size:14.5px;color:var(--dim);background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px 22px}
+.note b{color:var(--bone)}
+footer{border-top:1px solid var(--line);padding:26px 0}
+footer .wrap{max-width:1080px}
+footer p{font-family:var(--mono);font-size:12px;color:var(--dim)}
+footer a{color:var(--dim)}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap"><a class="logo" href="/"><b>Channel</b>Forge</a></div>
+</nav>
+
+<main>
+  <div class="wrap">
+    <div class="check">
+      <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#7ADB8F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+    </div>
+    <span class="eyebrow">payment received</span>
+    <h1>Thank you. Your studio is ready.</h1>
+    <p class="lead">Your $19 payment went through. Download ChannelForge below, unzip it anywhere, and open Claude Code — you're fifteen minutes from your first produced scene.</p>
+
+    <!-- DOWNLOAD_URL заменить на реальную ссылку на zip продукта (Google Drive / GitHub Release) -->
+    <a class="btn" id="download" href="#" download>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#16130f" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 21h16"/></svg>
+      Download ChannelForge (.zip)
+    </a>
+
+    <div class="steps">
+      <h3>FIRST THREE STEPS</h3>
+      <div class="st"><span class="n">01</span><div class="t"><b>Unzip anywhere.</b> <span>Desktop, a projects folder — wherever you like.</span></div></div>
+      <div class="st"><span class="n">02</span><div class="t"><b>Open Claude Code and say one sentence.</b><br><span class="mono">read the ChannelForge folder and set it up for me</span></div></div>
+      <div class="st"><span class="n">03</span><div class="t"><b>Answer eleven questions.</b> <span>Claude builds your workspace and walks you to your first scene.</span></div></div>
+    </div>
+
+    <div class="note">
+      <p style="margin:0"><b>Save this file.</b> Keep the .zip somewhere safe — it's yours for good. Lost it, or the download didn't start? Email <a href="mailto:sashok93333@gmail.com" style="color:var(--term-green)">sashok93333@gmail.com</a> with your payment reference and we'll send it straight over. Not for you? You have <b>14 days</b> for a full refund — same address, no questions.</p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><a href="/">← channelforgehq.github.io</a> · <a href="/terms.html">Terms &amp; Refunds</a> · sashok93333@gmail.com</p>
+  </div>
+</footer>
+
+<script>
+// Ссылка на файл продукта. Заменить "#" на прямую ссылку на .zip (Google Drive direct / GitHub Release).
+// Пока плейсхолдер — кнопка ведёт на письмо поддержки, чтобы покупатель не остался без файла.
+const DOWNLOAD_URL = "#";
+const btn = document.getElementById('download');
+if (DOWNLOAD_URL !== "#") {
+  btn.href = DOWNLOAD_URL;
+} else {
+  btn.classList.add('disabled');
+  btn.removeAttribute('download');
+  btn.href = "mailto:sashok93333@gmail.com?subject=ChannelForge%20download&body=I%20just%20paid%20and%20need%20the%20download%20link.%20My%20payment%20reference%3A%20";
+  btn.querySelector('svg').nextSibling.textContent = " Email me the download link";
+}
+</script>
+
+</body>
+</html>

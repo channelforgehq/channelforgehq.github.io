@@ -504,7 +504,7 @@ details .a{padding:0 4px 26px;color:var(--dim);max-width:70ch}
       <div style="display:inline-flex;align-items:center;gap:9px;margin:4px auto 2px;font-family:var(--mono);font-size:14px;color:var(--term-green);border:1px solid rgba(122,219,143,.35);border-radius:99px;padding:9px 20px"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#7ADB8F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>14-day money-back guarantee — full refund, no questions</div>
       <p class="muted">Pipeline (6 phases, 28 steps) · 8 skills · 9 scripts · templates · MAKE-IT-YOURS guide · license for all your channels</p>
       <div class="after">
-        <div class="card"><span class="n">AFTER PAYMENT · 01</span>Download link lands in your email within a minute.</div>
+        <div class="card"><span class="n">AFTER PAYMENT · 01</span>Instant download the moment your payment clears — straight from the confirmation page.</div>
         <div class="card"><span class="n">AFTER PAYMENT · 02</span>Unzip anywhere. Open Claude Code. Say the sentence.</div>
         <div class="card"><span class="n">AFTER PAYMENT · 03</span>Fifteen minutes later you're producing your first scene.</div>
       </div>
@@ -512,17 +512,39 @@ details .a{padding:0 4px 26px;color:var(--dim);max-width:70ch}
         <a class="btn" style="font-size:18px;padding:18px 44px" href="#" data-buy>Get ChannelForge · $19</a>
         <a class="btn ghost" style="font-size:18px;padding:18px 34px" href="#" id="crypto-btn">Pay with crypto · USDT</a>
       </div>
-      <p class="guarantee">14-day money-back guarantee · secure checkout · <span id="pay-methods">cards and PayPal accepted</span> · instant delivery to your email</p>
+      <p class="guarantee">14-day money-back guarantee · secure checkout by ROBOKASSA · <span id="pay-methods">cards accepted</span> · instant download after payment</p>
     </div>
   </div>
 </section>
 
+<!-- FOOTER -->
+<footer style="border-top:1px solid var(--line);padding:48px 0 56px">
+  <div class="wrap" style="display:flex;flex-wrap:wrap;gap:26px 48px;justify-content:space-between;align-items:flex-start">
+    <div style="max-width:36ch">
+      <a class="logo" href="#top" style="font-size:16px;text-decoration:none"><b>Channel</b>Forge</a>
+      <p class="muted" style="font-size:14px;margin-top:10px">Faceless video with a human fingerprint. A production system your Claude Code runs. $19 once, no subscriptions.</p>
+    </div>
+    <div style="font-family:var(--mono);font-size:12.5px;line-height:2.1">
+      <a href="/terms.html" style="color:var(--dim);text-decoration:none;display:block">Terms, Refunds &amp; Privacy</a>
+      <a href="/validator.html" style="color:var(--dim);text-decoration:none;display:block">Free niche validator</a>
+      <a href="mailto:sashok93333@gmail.com" style="color:var(--dim);text-decoration:none;display:block">sashok93333@gmail.com</a>
+    </div>
+  </div>
+  <div class="wrap" style="margin-top:30px;padding-top:20px;border-top:1px solid var(--line)">
+    <p style="font-family:var(--mono);font-size:11.5px;color:#565a68;line-height:1.85">
+      Seller: Aleksandr Zorin · Self-employed (Professional Income Tax payer), Russian Federation · INN __________<br>
+      Payments processed securely by ROBOKASSA. © 2026 ChannelForge.
+    </p>
+  </div>
+</footer>
+
 <script>
-// ПЕРЕД ПУБЛИКАЦИЕЙ:
-// 1. BUY_URL — реальная ссылка оплаты lava.top.
+// ОПЛАТА:
+// 1. BUY_URL — платёжная ссылка ROBOKASSA на $19 (взять в ЛК Robokassa).
+//    lava.top заблокирована 22.07.2026 — старая ссылка мертва, заменяется на Robokassa.
 // 2. CRYPTO_URL — ссылка крипто-оплаты, ЕСЛИ решено её включить (иначе оставить "#" —
-//    кнопка и FAQ-пункт про крипту скроются автоматически).
-const BUY_URL = "https://app.lava.top/products/08f46389-691a-4f9d-a7e4-8e5058b4d953";
+//    кнопка и FAQ-пункт про крипту скроются автоматически). Крипта пока выключена.
+const BUY_URL = "#";
 const CRYPTO_URL = "#";
 
 document.querySelectorAll('[data-buy]').forEach(a => { if (BUY_URL !== "#") a.href = BUY_URL; });
